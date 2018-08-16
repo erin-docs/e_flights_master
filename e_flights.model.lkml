@@ -10,8 +10,6 @@ datagroup: e_flights_default_datagroup {
 
 persist_with: e_flights_default_datagroup
 
-explore: accidents {}
-
 explore: aircraft {
   join: aircraft_types {
     type: left_outer
