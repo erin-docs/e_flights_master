@@ -3,7 +3,6 @@ connection: "faa"
 # include all the views
 include: "*.view"
 
-# no argh
 
 datagroup: e_flights_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
@@ -13,6 +12,7 @@ datagroup: e_flights_default_datagroup {
 persist_with: e_flights_default_datagroup
 
 explore: aircraft {
+  description: "Aircraft Information"
   join: aircraft_types {
     type: left_outer
     sql_on: ${aircraft.aircraft_type_id} = ${aircraft_types.aircraft_type_id} ;;
