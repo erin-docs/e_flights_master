@@ -3,6 +3,8 @@ connection: "faa"
 # include all the views
 include: "*.view"
 
+# argh
+
 datagroup: e_flights_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
