@@ -1,5 +1,7 @@
 connection: "faa"
 
+aggregate_awareness: yes
+
 # include all the views
 include: "*.view"
 
@@ -12,7 +14,7 @@ datagroup: e_flights_default_datagroup {
 persist_with: e_flights_default_datagroup
 
 explore: aircraft {
-  description: "Aircraft Information"
+  description: "Aircraft Data"
   join: aircraft_types {
     type: left_outer
     sql_on: ${aircraft.aircraft_type_id} = ${aircraft_types.aircraft_type_id} ;;
