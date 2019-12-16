@@ -2,6 +2,7 @@ view: agg_aw_pdt_flight_carrier_date {
 
 
     derived_table: {
+    publish_as_db_view: yes
     datagroup_trigger: e_flights_default_datagroup
       explore_source: ontime {
         timezone: "America/Los_Angeles"
