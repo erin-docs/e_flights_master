@@ -1,12 +1,10 @@
-view: agg_aw_pdt_flight_carrier_date {
-
+view: erin_flights_pdt_stable_name {
 
     derived_table: {
-    datagroup_trigger: e_flights_default_datagroup
-      indexes: ["id","flight_num"]
+      publish_as_db_view: yes
+      datagroup_trigger: e_flights_default_datagroup
       explore_source: ontime {
         timezone: "America/Los_Angeles"
-        column: id2 {}
         column: flight_num {}
         column: carrier {}
         column: arr_date {}

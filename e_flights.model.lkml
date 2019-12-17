@@ -5,9 +5,11 @@ aggregate_awareness: yes
 # include all the views
 include: "*.view"
 
+explore: agg_aw_pdt_flight_carrier_date {}
+
 
 datagroup: e_flights_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+ sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
 }
 
