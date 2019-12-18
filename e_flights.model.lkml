@@ -7,6 +7,9 @@ include: "*.view"
 
 explore: agg_aw_pdt_flight_carrier_date {}
 
+explore: e_flights_pdt_stable_name {
+  label: "E Flights PDT Stable Name"
+}
 
 datagroup: e_flights_default_datagroup {
  sql_trigger: SELECT MAX(id) FROM etl_log;;

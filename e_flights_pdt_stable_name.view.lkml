@@ -1,6 +1,9 @@
-view: erin_flights_pdt_stable_name {
+view: e_flights_pdt_stable_name {
+  view_label: "E Flights"
+
 
     derived_table: {
+      indexes: ["flight_num"]
       publish_as_db_view: yes
       datagroup_trigger: e_flights_default_datagroup
       explore_source: ontime {
