@@ -1,4 +1,4 @@
-view: e_flights_pdt_stable_name {
+view: e_flights_pdt {
   view_label: "E Flights"
 
 
