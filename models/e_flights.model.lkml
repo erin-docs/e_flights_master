@@ -1,6 +1,7 @@
 connection: "faa"
 
 include: "/views/*.view.lkml"
+include: "/explores/flights.explore.lkml"
 
 aggregate_awareness: yes
 
