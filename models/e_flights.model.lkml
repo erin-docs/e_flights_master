@@ -59,6 +59,8 @@ explore: aircraft_models {
 
 explore: aircraft_types {}
 
+explore: accidents {}
+
 explore: airport_remarks {}
 
 explore: airports {}

@@ -92,6 +92,12 @@ view: accidents {
     sql: ${TABLE}.investigation_type ;;
   }
 
+dimension: store_location {
+  type: location
+  sql_latitude: ${latitude} ;;
+  sql_longitude: ${longitude} ;;
+}
+
   dimension: latitude {
     type: string
     sql: ${TABLE}.latitude ;;
